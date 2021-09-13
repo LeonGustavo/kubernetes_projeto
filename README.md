@@ -1,5 +1,5 @@
 # kubernetes_projeto
 Projeto desenvolvido durante o curso da Alura
 
-![](D:\ambiente_dev\kubernetes\projeto\desenho_projeto.PNG)
+![](https://github.com/LeonGustavo/kubernetes_projeto/blob/master/projeto/desenho_projeto.PNG?raw=true)
 
