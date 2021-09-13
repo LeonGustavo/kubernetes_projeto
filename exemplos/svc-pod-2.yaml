@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service #usado para a comunicação com o pod2
+metadata:
+        name: svc-pod-2
+spec:
+        type: ClusterIP
+        selector:
+                app: segundo-pod #label do pod-2 para a comunicacao
+        ports:
+              - port: 9000 #escuta por esta porta
+                targetPort: 80 #envia para esta porta no pod2

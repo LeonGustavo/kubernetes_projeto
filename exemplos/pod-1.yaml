@@ -1,0 +1,15 @@
+apiVersion: v1 #versao da api que vai ser usada
+kind: Pod #tipo de objeto (deployment, replicaset, pod)
+metadata: #dados do pod
+  name: pod-1 #nome
+  labels:
+    app: primeiro-pod
+spec: #especificacoes (#replicas: seria a quantidade)
+  containers: #aqui pode ser definido 1 ou mais containers
+    - name: container-pod-1
+      image: nginx:latest
+      ports:
+        - containerPort: 80
+
+
+#para aplicar esse arquivo usa o comando "kubectl apply -f .\pod-1.yaml
